@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/labs/cordic-new/cordic-new.srcs/sources_1/imports/cordic/cordic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic
+INFO: [VRFC 10-2458] undeclared symbol rt0, assumed default net type wire [Z:/labs/cordic-new/cordic-new.srcs/sources_1/imports/cordic/cordic.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/labs/cordic-new/cordic-new.srcs/sim_1/imports/cordic/cordic_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/labs/cordic-finalversion/cordic-finalversion.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

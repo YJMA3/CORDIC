@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec 14 23:36:45 2017
+# Process ID: 8008
+# Current directory: C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11288 C:\Workspace\Vivado\EE4301_Labs\lab8 cordic-finalversion-2\cordic-finalversion.xpr
+# Log file: C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/vivado.log
+# Journal file: C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source cordic_tb.tcl
+run 5000 ns
+close_sim
+launch_simulation
+launch_simulation
+source cordic_tb.tcl
+close_sim
+launch_simulation
+source cordic_tb.tcl
+run 5000 ns
+close_sim
+launch_simulation
+source cordic_tb.tcl
+run 10 us
+run 10 us
+restart
+run 15 us
+close_sim
+launch_simulation
+source cordic_tb.tcl
+run 15 us
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source cordic_tb.tcl
+run 15 us
+restart
+run 13 us
+restart
+run 12 us
+close_sim
+launch_simulation
+source cordic_tb.tcl
+run 12 us
+close_sim
+launch_simulation
+source cordic_tb.tcl
+run 12 us
+close_sim
+launch_simulation
+source cordic_tb.tcl
+run 12 us
+close_sim
+launch_simulation
+source cordic_tb.tcl
+run 12 us
+close_sim
+launch_simulation
+source cordic_tb.tcl
+run 12 us

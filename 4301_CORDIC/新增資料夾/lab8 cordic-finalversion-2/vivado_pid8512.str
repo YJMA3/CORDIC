@@ -1,0 +1,164 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 8512
+License: Customer
+
+Current time: 	12/14/17 11:32:59 PM CST
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 800 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;C:/WINDOWS/System32/WindowsPowerShell/v1.0/;C:/Program Files/MATLAB/R2016a/runtime/win64;C:/Program Files/MATLAB/R2016a/bin;C:/Program Files/PuTTY/;C:/Users/maxxx924/AppData/Local/Microsoft/WindowsApps;;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	maxxx924
+User home directory: C:/Users/maxxx924
+User working directory: C:/Users/maxxx924/cordic-finalversion-2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/maxxx924/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/maxxx924/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/maxxx924/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/Users/maxxx924/cordic-finalversion-2/.Xil/Vivado-8512-ECE-LAB318
+
+GUI allocated memory:	180 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 527 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 53 MB (+53175kb) [00:00:03]
+// [Engine Memory]: 474 MB (+345356kb) [00:00:03]
+// aK:q (cg:JFrame): Older Project Version: addNotify
+// [Engine Memory]: 527 MB (+30526kb) [00:00:07]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aK:q)
+// Opening Vivado Project: C:\Users\maxxx924\cordic-finalversion-2\cordic-finalversion.xpr. Version: Vivado v2016.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+dismissDialog("Older Project Version"); // aK:q (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 527 MB. GUI used memory: 35 MB. Current time: 12/14/17 11:33:01 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project C:/Users/maxxx924/cordic-finalversion-2/cordic-finalversion.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/maxxx924/cordic-finalversion-2/cordic-finalversion.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'Z:/labs/cordic-finalversion' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Project 1-230] Project 'cordic-finalversion.xpr' upgraded for this version of Vivado. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 572 MB (+20326kb) [00:00:10]
+// [Engine Memory]: 616 MB (+15470kb) [00:00:11]
+// [GUI Memory]: 57 MB (+1719kb) [00:00:11]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// Project name: cordic-finalversion; location: C:/Users/maxxx924/cordic-finalversion-2; part: xc7a35tcpg236-1
+// [Engine Memory]: 651 MB (+4159kb) [00:00:12]
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B:i (D:JPanel, cg:JFrame)
+// [GUI Memory]: 63 MB (+2768kb) [00:00:20]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), CORD : cordic (cordic.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), CORD : cordic (cordic.v)]", 2, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// [GUI Memory]: 69 MB (+2809kb) [00:00:30]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), CORD : cordic (cordic.v)]", 2, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectCodeEditor("cordic.v", 148, 152); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), S1 : hexto7seg (hexto7seg.v)]", 3, false); // B:i (D:JPanel, cg:JFrame)
+// [GUI Memory]: 78 MB (+5814kb) [00:00:48]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), CORD : cordic (cordic.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), CORD : cordic (cordic.v)]", 2, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+// Elapsed time: 14 seconds
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_SRC, "Copy File Into Project"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_SRC
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files Z:/labs/cordic-new/cordic-new.srcs/sources_1/imports/cordic/cordic.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), S1 : hexto7seg (hexto7seg.v)]", 3, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v)]", 1, true, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_ALL_SRCS, "Copy All Files Into Project"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_ALL_SRCS
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bs:g (cg:JFrame):  Importing Sources : addNotify
+// Tcl Message: import_files 
+// Tcl Message: INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1' 
+dismissDialog("Importing Sources"); // bs:g (cg:JFrame)
+// [GUI Memory]: 83 MB (+1552kb) [00:01:33]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), CORD : cordic (cordic.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), CORD : cordic (cordic.v)]", 2, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), S1 : hexto7seg (hexto7seg.v)]", 3, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, lab8.xdc]", 6, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, lab8.xdc]", 6, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+// [GUI Memory]: 92 MB (+4787kb) [00:02:23]
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)

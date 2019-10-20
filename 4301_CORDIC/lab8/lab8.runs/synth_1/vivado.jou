@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Dec  3 22:52:02 2017
+# Process ID: 18736
+# Current directory: C:/Workspace/Vivado/EE4301_Labs/lab8/lab8.runs/synth_1
+# Command line: vivado.exe -log lab8_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab8_top.tcl
+# Log file: C:/Workspace/Vivado/EE4301_Labs/lab8/lab8.runs/synth_1/lab8_top.vds
+# Journal file: C:/Workspace/Vivado/EE4301_Labs/lab8/lab8.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab8_top.tcl -notrace

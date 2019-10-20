@@ -1,0 +1,35 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+seg=xxxxxxx
+seg=xxx0xxx
+seg=xxx00xx
+seg=1xx00xx
+seg=1x000xx
+seg=10000xx
+seg=100001x
+seg=1000010
+seg=xxxxxxx
+seg=xxx0xxx
+seg=xxx00xx
+seg=1xx00xx
+seg=1x000xx
+seg=10000xx
+seg=100001x
+seg=1000010
+seg=xxxxxxx
+Stopped at time : 1126 ps : File "Z:/labs/cordic-finalversion/cordic-finalversion.sim/sim_1/impl/timing/toptb_time_impl.v" Line 3315
+seg=xxx0xxx
+seg=xxx00xx
+seg=1xx00xx
+seg=1x000xx
+seg=10000xx
+seg=100001x
+seg=1000010
+seg=xxxxxxx
+seg=xxx0xxx
+seg=xxx00xx
+seg=1xx00xx
+seg=1x000xx
+seg=10000xx
+seg=100001x
+seg=1000010

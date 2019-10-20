@@ -1,0 +1,18 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 5bde543e285542309f792623c2af0c32 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cordic_tb_behav xil_defaultlib.cordic_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.srcs/sources_1/imports/cordic/cordic.v" Line 1. Module cordic doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.srcs/sources_1/imports/cordic/cordic.v" Line 235. Module serial_addsub doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.srcs/sources_1/imports/cordic/cordic.v" Line 235. Module serial_addsub doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.srcs/sources_1/imports/cordic/cordic.v" Line 235. Module serial_addsub doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_addsub
+Compiling module xil_defaultlib.cordic
+Compiling module xil_defaultlib.cordic_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cordic_tb_behav

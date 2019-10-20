@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.sim/sim_1/impl/func/cordic_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic
+INFO: [VRFC 10-311] analyzing module cordic_controller
+INFO: [VRFC 10-311] analyzing module hexto7seg
+INFO: [VRFC 10-311] analyzing module lab8_top
+INFO: [VRFC 10-311] analyzing module serial_adder
+INFO: [VRFC 10-311] analyzing module serial_adder_0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.srcs/sources_1/imports/cordic/cordic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic
+WARNING: [VRFC 10-1195] overwriting previous definition of module cordic [C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.srcs/sources_1/imports/cordic/cordic.v:2]
+INFO: [VRFC 10-311] analyzing module cordic_controller
+WARNING: [VRFC 10-1195] overwriting previous definition of module cordic_controller [C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.srcs/sources_1/imports/cordic/cordic.v:62]
+INFO: [VRFC 10-311] analyzing module serial_adder
+WARNING: [VRFC 10-1195] overwriting previous definition of module serial_adder [C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.srcs/sources_1/imports/cordic/cordic.v:92]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.srcs/sim_1/imports/cordic/cordic_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic_tb

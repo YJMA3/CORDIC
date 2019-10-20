@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "toptb_time_impl.v"
+verilog xil_defaultlib  "../../../../cordic-finalversion.srcs/sim_1/new/toptb.v"
+
+# Do not sort compile order
+nosort

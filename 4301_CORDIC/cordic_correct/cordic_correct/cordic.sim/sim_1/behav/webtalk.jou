@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Dec 13 19:03:39 2017
+# Process ID: 13496
+# Current directory: C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.sim/sim_1/behav/xsim.dir/cordic_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Workspace/Vivado/EE4301_Labs/cordic_correct/cordic_correct/cordic.sim/sim_1/behav/xsim.dir/cordic_tb_behav/webtalk/xsim_webtalk.tcl -notrace

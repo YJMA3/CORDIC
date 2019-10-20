@@ -1,0 +1,64 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sun Dec 10 20:40:13 2017
+| Host         : ECE-LAB318 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab8_top_control_sets_placed.rpt
+| Design       : lab8_top
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    17 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              19 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |            8 |
+| Yes          | No                    | No                     |              75 |           22 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             137 |           34 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------+-----------------------------------------+------------------+----------------+
+|  Clock Signal  |             Enable Signal            |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------+-----------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | CORDIC/CONTROL/E[0]                  | CORDIC/CONTROL/shift_counter[4]_i_1_n_0 |                1 |              5 |
+|  CDIV3/CLK     |                                      |                                         |                4 |              8 |
+|  clk_IBUF_BUFG |                                      |                                         |                8 |             11 |
+|  clk_IBUF_BUFG | CORDIC/CONTROL/z_result_reg[0][0]    |                                         |                4 |             16 |
+|  clk_IBUF_BUFG | CORDIC/CONTROL/rom_content_reg[0][0] |                                         |               12 |             27 |
+|  clk_IBUF_BUFG |                                      | CDIV3/count00                           |                8 |             32 |
+|  clk_IBUF_BUFG | CDIV3/count00                        | CDIV3/count1                            |                8 |             32 |
+|  clk_IBUF_BUFG | CDIV3/count1                         | CDIV3/count2                            |                8 |             32 |
+|  clk_IBUF_BUFG | CDIV3/count2                         | CDIV3/count3                            |                8 |             32 |
+|  clk_IBUF_BUFG | CORDIC/CONTROL/x_result_reg[15]_0[0] |                                         |                6 |             32 |
+|  clk_IBUF_BUFG | CORDIC/CONTROL/E[0]                  | start_IBUF                              |                9 |             36 |
++----------------+--------------------------------------+-----------------------------------------+------------------+----------------+
+
+

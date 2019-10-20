@@ -1,0 +1,2404 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 8008
+License: Customer
+
+Current time: 	12/14/17 11:36:58 PM CST
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1360x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 44 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	D:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;D:/Xilinx/Vivado/2017.2/bin;D:/Xilinx/Vivado/2017.2/lib/win64.o;D:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;D:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;D:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;D:/Xilinx/Vivado_HLS/2017.2/bin;C:/Program Files (x86)/Intel/iCLS Client/;C:/Program Files/Intel/iCLS Client/;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files/Intel/WiFi/bin/;C:/Program Files/Common Files/Intel/WirelessCommon/;C:/Program Files (x86)/PharosSystems/Core;D:/Program Files/MATLAB/R2017a/runtime/win64;D:/Program Files/MATLAB/R2017a/bin;C:/Program Files/PuTTY/;C:/Users/ledze/AppData/Local/Microsoft/WindowsApps;D:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;D:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	ledze
+User home directory: C:/Users/ledze
+User working directory: C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2017.2
+RDI_DATADIR: D:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/ledze/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/ledze/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/ledze/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	D:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/.Xil/Vivado-8008-DESKTOP-6JO3LCV
+
+GUI allocated memory:	186 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 617 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Workspace\Vivado\EE4301_Labs\lab8 cordic-finalversion-2\cordic-finalversion.xpr. Version: Vivado v2017.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 44 MB (+43528kb) [00:00:05]
+// [Engine Memory]: 469 MB (+340101kb) [00:00:05]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.xpr} 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 46 MB (+62kb) [00:00:07]
+// [Engine Memory]: 583 MB (+94748kb) [00:00:07]
+// [GUI Memory]: 54 MB (+5653kb) [00:00:07]
+// [GUI Memory]: 62 MB (+5960kb) [00:00:08]
+// [Engine Memory]: 614 MB (+2535kb) [00:00:08]
+// Tcl Message: open_project {C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/maxxx924/cordic-finalversion-2' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.2/data/ip'. 
+// Project name: cordic-finalversion; location: C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2; part: xc7a35tcpg236-1
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 45 MB. Current time: 12/14/17 11:36:58 PM CST
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+// PAPropertyPanels.initPanels (lab8_top.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/Workspace/Vivado/EE4301_Labs/lab8 -notrace couldn't read file "C:/Workspace/Vivado/EE4301_Labs/lab8": no such file or directory INFO: [Common 17-206] Exiting Webtalk at Thu Dec 14 23:37:11 2017... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 70 MB (+4950kb) [00:00:23]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 74 MB. Current time: 12/14/17 11:37:13 PM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source cordic_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 888.102 ; gain = 0.000 
+// 'd' command handler elapsed time: 5 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// [GUI Memory]: 75 MB (+1722kb) [00:00:25]
+setText(PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, "5000"); // d:X (a:JPanel, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 5000 ns 
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 71 MB. Current time: 12/14/17 11:37:24 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 193, 368); // n:a (JViewport:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 45 MB. Current time: 12/14/17 11:37:30 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 45 MB. Current time: 12/14/17 11:37:30 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 45 MB. Current time: 12/14/17 11:37:30 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 45 MB. Current time: 12/14/17 11:37:31 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 45 MB. Current time: 12/14/17 11:37:31 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 45 MB. Current time: 12/14/17 11:37:31 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 45 MB. Current time: 12/14/17 11:37:31 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 45 MB. Current time: 12/14/17 11:37:31 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 352, 314); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 529, 20, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 45 MB. Current time: 12/14/17 11:37:35 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 567, 49, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+// [GUI Memory]: 79 MB (+44kb) [00:00:53]
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 56 MB. Current time: 12/14/17 11:37:43 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 555, 135); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 329, 158); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 310, 49); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 46 MB. Current time: 12/14/17 11:37:51 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 572, 98); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 402, 45); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 402, 45); // n:a (JViewport:JComponent, cg:JFrame)Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 631 MB. GUI used memory: 46 MB. Current time: 12/14/17 11:37:57 PM CST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// [Engine Memory]: 651 MB (+6552kb) [00:01:12]
+// [GUI Memory]: 92 MB (+9218kb) [00:01:15]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), CORD : cordic (cordic.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), CORD : cordic (cordic.v)]", 2, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("cordic.v", 215, 100); // bI:J (JPanel:JComponent, cg:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+selectCodeEditor("cordic.v", 514, 195); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 128, 158); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 186, 158); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 387, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 477, 145); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("cordic.v", 311, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 104, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 136, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 123, 181); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 102, 184); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 102, 184, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("cordic.v", 107, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 107, 183, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("cordic.v", 156, 259); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 313, 229); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 85, 203); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("cordic.v", 186, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 181, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("cordic.v", 83, 72); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 345, 257); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cordic.v", 345, 257); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cordic.v", 192, 255); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("cordic.v", 114, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 90, 187); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax:DockableFrame
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// [GUI Memory]: 100 MB (+3390kb) [00:03:32]
+selectCodeEditor("lab8_top.v", 205, 200); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_top.v", 300, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), S1 : hexto7seg (hexto7seg.v)]", 3, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), S1 : hexto7seg (hexto7seg.v)]", 3, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("hexto7seg.v", 266, 327); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_top (lab8_top.v), CORD : cordic (cordic.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 207, 155); // bI:J (JPanel:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, lab8.xdc]", 6, false); // B:i (D:JPanel, cg:JFrame)
+selectCodeEditor("cordic.v", 198, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, lab8.xdc]", 6, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, lab8.xdc]", 6, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("lab8.xdc", 225, 236); // bI:J (JPanel:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8); // B:i (D:JPanel, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 267, 167); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab8_top.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 202, 230); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 213, 226); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, cordic_tb (cordic_tb.v)]", 9, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, cordic_tb (cordic_tb.v)]", 9, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectCodeEditor("cordic_tb.v", 198, 234); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("cordic_tb.v", 296, 427); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 313, 425); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 257, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 286, 238); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// [GUI Memory]: 106 MB (+850kb) [00:05:40]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 227, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 178, 44); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 2, 51); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 9, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_TASK
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 357, 93); // n:a (JViewport:JComponent, cg:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 357, 93); // n:a (JViewport:JComponent, cg:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 357, 93); // n:a (JViewport:JComponent, cg:JFrame)Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 651 MB. GUI used memory: 49 MB. Current time: 12/14/17 11:43:05 PM CST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic_tb.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 295, 187); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 160, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 271, 432); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 269, 301); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 301, 428); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 206, 430); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 236, 430); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 245, 431); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 253, 406); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 238, 429); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 255, 392); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("cordic_tb.v", 257, 219); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cordic_tb.v", 253, 233); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cordic_tb.v", 147, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 197, 426); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 289, 431); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("cordic_tb.v", 303, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Save", "Save"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+dismissFileChooser();
+// 'd' command handler elapsed time: 5 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// HMemoryUtils.trashcanNow. Engine heap size: 679 MB. GUI used memory: 52 MB. Current time: 12/14/17 11:44:29 PM CST
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 34c8725ce6f446f096f69ae61ec336eb --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cordic_tb_behav xil_defaultlib.cordic_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration ERROR: [VRFC 10-91] it is not declared [C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.srcs/sim_1/imports/cordic/cordic_tb.v:34] ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 11 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+selectCodeEditor("cordic.v", 218, 251); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic_tb.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 263, 306); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 135, 428); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 125, 110); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 159, 208); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 679 MB. GUI used memory: 52 MB. Current time: 12/14/17 11:45:06 PM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source cordic_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 922.195 ; gain = 0.000 
+// 'd' command handler elapsed time: 5 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic_tb.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 405, 233); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 212, 217); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 114, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 94, 71); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 155, 80); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 108, 67); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cordic_tb.v", 233, 230); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 208, 217); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 681 MB. GUI used memory: 106 MB. Current time: 12/14/17 11:45:42 PM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source cordic_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 5000 ns 
+// HMemoryUtils.trashcanNow. Engine heap size: 681 MB. GUI used memory: 55 MB. Current time: 12/14/17 11:45:47 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic_tb.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 240, 210); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 195, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 80, 15); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 33, 363); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 688 MB (+4904kb) [00:09:28]
+// Elapsed time: 18 seconds
+selectCodeEditor("cordic.v", 300, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 114, 147); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 152, 196); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 138, 166); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 338, 123); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic_tb.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 343, 320); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 3", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic_tb.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 136, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 70, 201); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 60, 317); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 139, 310); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 123, 236); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 143, 388); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 125, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 241, 142); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 126, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 219, 301); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 228, 162); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 67, 124); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 204, 110); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 89, 105); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 185, 152); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 31, 411); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 46, 429); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 29, 408); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 95, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 57, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 54, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 73, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 266, 408); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 164, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 80, 221); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 118, 107); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 164, 158); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 131, 257); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 71, 378); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 92, 236); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 62, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 231, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 112, 447); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 210, 335); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 116, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 154, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 254, 372); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cordic_tb.v", 132, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 54 MB. Current time: 12/14/17 11:49:30 PM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source cordic_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 56 MB. Current time: 12/14/17 11:49:32 PM CST
+selectComboBox(PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, "us", 2); // b:e (a:JPanel, cg:JFrame)
+setText(PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, "10"); // d:X (a:JPanel, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 10 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 257, 317); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 135, 237); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 4", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 28 seconds
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 56 MB. Current time: 12/14/17 11:50:51 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 10 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+setText(PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, "15"); // d:X (a:JPanel, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, "simulation_live_restart"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART
+// bs:g (cg:JFrame):  Restart : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// Tcl Message: restart 
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+dismissDialog("Restart"); // bs:g (cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 56 MB. Current time: 12/14/17 11:51:03 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 15 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 222, 54, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 200, 22); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 56 MB. Current time: 12/14/17 11:51:22 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 209, 22, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 214, 53); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 233, 23); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 57 MB. Current time: 12/14/17 11:51:30 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 321, 56); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 224, 54); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 216, 22); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 56 MB. Current time: 12/14/17 11:51:32 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 530, 37); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 223, 47); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 605, 26); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 56 MB. Current time: 12/14/17 11:51:42 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 630, 49); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 584, 27); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 308, 189); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 56 MB. Current time: 12/14/17 11:51:48 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 496, 19); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 481, 52); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 523, 52, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 56 MB. Current time: 12/14/17 11:51:56 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 588, 22); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexto7seg.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab8_top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("lab8_top.v", 275, 232); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 310, 210); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic_tb.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("cordic_tb.v", 129, 128); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cordic_tb.v", 383, 337); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cordic_tb.v", 213, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab8_top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 238, 257); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 146, 239); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic_tb.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// [GUI Memory]: 112 MB (+725kb) [00:15:55]
+selectCodeEditor("cordic_tb.v", 211, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 48, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 57 MB. Current time: 12/14/17 11:53:09 PM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source cordic_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 58 MB. Current time: 12/14/17 11:53:11 PM CST
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 15 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 440, 56); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 58 MB. Current time: 12/14/17 11:53:16 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 425, 20); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 425, 20, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 432, 19); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 55 MB. Current time: 12/14/17 11:53:24 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 862, 46); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 770, 19); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 377, 238); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 5*", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 308, 265); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 5*", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 327, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 297, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 322, 192); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("cordic.v", 152, 428); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 202, 460); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("cordic.v", 24, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 17, 107); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 521, 205); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("cordic.v", 172, 176); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 138, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 160, 239); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 143, 241); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 132, 256); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 130, 278); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 206, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 199, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 198, 274); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 228, 256); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 232, 256); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 210, 237); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 106, 217); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 101, 220); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 101, 218); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 306, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 161, 255); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 62, 221); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 86, 221); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 320, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 292, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 289, 256); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 248, 242); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 229, 257); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 289, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 206, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 63, 179); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 245, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 394, 278); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 374, 250); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 189, 278); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 280, 307); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 205, 261); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 229, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 345, 268); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 343, 255); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 388, 227); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 248, 256); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 304, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 291, 280); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 249, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 368, 250); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 387, 191); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 9 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+selectCodeEditor("cordic_tb.v", 146, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 78, 106); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 3 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // ax:DockableFrame
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 103); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-529] concurrent assignment to a non-net xas is not permitted [C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.srcs/sources_1/imports/cordic/cordic.v:58]. ]", 104, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Workspace\Vivado\EE4301_Labs\lab8 cordic-finalversion-2\cordic-finalversion.srcs\sources_1\imports\cordic\cordic.v;-;;-;16;-;line;-;58;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 229, 180); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 37, 47); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 140, 104); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 23, 50); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 127, 82); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("cordic.v", 159, 84); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 57 MB. Current time: 12/14/17 11:57:16 PM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source cordic_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 4 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 58 MB. Current time: 12/14/17 11:57:17 PM CST
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 15 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 212, 22, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 58 MB. Current time: 12/14/17 11:57:22 PM CST
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 213, 49, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 58 MB. Current time: 12/14/17 11:57:34 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 704, 26); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 997, 53); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+setText(PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, "13"); // d:X (a:JPanel, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, "simulation_live_restart"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART
+// bs:g (cg:JFrame):  Restart : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 58 MB. Current time: 12/14/17 11:57:44 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// Tcl Message: restart 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+dismissDialog("Restart"); // bs:g (cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 13 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+setText(PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, "12"); // d:X (a:JPanel, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, "simulation_live_restart"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART
+// bs:g (cg:JFrame):  Restart : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 58 MB. Current time: 12/14/17 11:57:55 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// Tcl Message: restart 
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+dismissDialog("Restart"); // bs:g (cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 12 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic_tb.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 103, 158); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 66, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 85, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic_tb.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 71, 159); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic_tb.v", 90, 159); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 341, 223); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 475, 145); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 264, 201); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 140, 238); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 141, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 131, 258); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 120, 259); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 161, 268); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 118, 259); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 158, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 121, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 183, 319); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 186, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 124, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("cordic.v", 236, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 224, 356); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 231, 357); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 239, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 223, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 245, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 287, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 323, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 156, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 235, 384); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 306, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 470, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 479, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 384, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 378, 306); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 58 MB. Current time: 12/15/17 12:00:10 AM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source cordic_tb.tcl 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 59 MB. Current time: 12/15/17 12:00:11 AM CST
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 12 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 245, 21, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 59 MB. Current time: 12/15/17 12:00:25 AM CST
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 256, 52, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 59 MB. Current time: 12/15/17 12:00:30 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 567, 30); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 274, 44); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 549, 17); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 59 MB. Current time: 12/15/17 12:00:33 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 842, 57); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1142, 48); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1142, 28); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 59 MB. Current time: 12/15/17 12:00:36 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 831, 45); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 59 MB. Current time: 12/15/17 12:00:41 AM CST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hexto7seg.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 195, 375); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 287, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 424, 360); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 510, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 307, 376); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 231, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 304, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 290, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 480, 358); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 224, 375); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 198, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 182, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 178, 310); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 176, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 163, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 164, 299); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 171, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 133, 274); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 163, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 211, 205); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 206, 181); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 96, 330); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 157, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 178, 308); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 235, 288); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("cordic.v", 208, 284); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 34 seconds
+selectCodeEditor("cordic.v", 228, 304); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 114, 182); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 104, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 121, 180); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 202, 152); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 97, 122); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 83, 143); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 83, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 161, 141); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 25, 125); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 7, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 121, 125); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 123, 141); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 121, 159); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 244, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cordic.v", 300, 189); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 300, 219); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("cordic.v", 283, 207); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("cordic.v", 29, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 653, 261); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 598, 243); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 21 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("cordic.v", 419, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("cordic.v", 477, 220); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 79, 371); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("cordic.v", 197, 278); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 146, 127); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 77, 220); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("cordic.v", 186, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 266, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 78, 162); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("cordic.v", 205, 410); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 134, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 134, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 148, 301); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 143, 296); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 289, 292); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 288, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 133, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 144, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 295, 310); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 132, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 143, 335); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 295, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 130, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 197, 354); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cordic.v", 230, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cordic.v", 219, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 182, 320); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 115, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 113, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 124, 312); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 172, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 150, 241); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 166, 222); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 76, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 142, 213); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 115, 181); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 113, 180); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 115, 202); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 117, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 129, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 167, 354); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 178, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 228, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 321, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 270, 354); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 409, 357); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 433, 354); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("cordic.v", 409, 381); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 168, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("cordic.v", 150, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 100, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 179, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 100, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 51, 335); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 162, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("cordic.v", 152, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 36, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 16, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 104, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 352, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 361, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 25, 370); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 168, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 23, 356); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 210, 356); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 356, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 112, 374); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 65, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 17, 390); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 17, 390); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 209, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 221, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 145, 325); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 42, 372); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 107, 406); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 95, 358); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 112, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("cordic.v", 55, 182); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 42, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 116, 335); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 78, 376); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 40, 408); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 134, 374); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 135, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 76, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 142, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 170, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 40, 239); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 177, 278); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 182, 354); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 136, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 182, 354); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 176, 393); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 198, 393); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 151, 392); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 147, 376); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 205, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 153, 405); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 256, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 61, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 44, 425); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 162, 344); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 213, 323); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 59 MB. Current time: 12/15/17 12:10:51 AM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source cordic_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 12 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 61 MB. Current time: 12/15/17 12:10:56 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 61 MB. Current time: 12/15/17 12:11:00 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 247, 20, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 246, 57, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 61 MB. Current time: 12/15/17 12:11:05 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 291, 341); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 207, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 79, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 78, 218); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 61 MB. Current time: 12/15/17 12:11:36 AM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source cordic_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 62 MB. Current time: 12/15/17 12:11:38 AM CST
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 12 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 270, 21); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 63 MB. Current time: 12/15/17 12:11:42 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 270, 21, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 262, 48, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 62 MB. Current time: 12/15/17 12:11:51 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 247, 10); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 270, 44); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 283, 20); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 72 MB. Current time: 12/15/17 12:11:55 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 539, 42); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 261, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 80, 219); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("cordic.v", 199, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cordic.v", 53, 391); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cordic.v", 58, 335); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 136, 89); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 159, 68); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 132, 125); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("cordic.v", 157, 125); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 132, 72); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 78, 106); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 114, 123); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 107, 117); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 114, 124); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 113, 110); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 51, 107); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 71, 105); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 76, 123); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 116, 89); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 145, 147); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 74, 105); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 5, 104); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 109, 108); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 168, 136); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 116, 86); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 234, 136); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cordic.v", 233, 157); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 197, 134); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("cordic.v", 138, 179); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cordic.v", 55, 169); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 145, 179); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 132, 180); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 44, 220); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 131, 181); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("cordic.v", 61, 158); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cordic.v", 99, 184); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 96, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 99, 141); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 116, 103); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 123, 121); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 109, 142); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 112, 121); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 80, 107); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 50 seconds
+selectCodeEditor("cordic.v", 147, 216); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 259, 239); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 187, 126); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("cordic.v", 151, 127); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 142, 423); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 19, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 192, 338); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 222, 69); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 228, 93); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cordic.v", 306, 134); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 104, 103); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 154, 150); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 352, 158); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 109, 144); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 109, 125); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 120, 174); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 106, 165); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 213, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 142, 296); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 110, 222); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 103, 200); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 78, 184); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 78, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 145, 202); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 147, 213); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 16, 309); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 126, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 110, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 67, 408); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 178, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 205, 305); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 176, 257); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 118 MB (+713kb) [00:39:19]
+selectCodeEditor("cordic.v", 86, 166); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 37, 126); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 36, 199); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("cordic.v", 103, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 114, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 93, 224); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 221, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 63 MB. Current time: 12/15/17 12:16:49 AM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source cordic_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 64 MB. Current time: 12/15/17 12:16:51 AM CST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 12 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 64 MB. Current time: 12/15/17 12:16:59 AM CST
+// Elapsed time: 10 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 97, 21); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cordic.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("cordic.v", 253, 239); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 226, 278); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 98, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 107, 258); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 112, 237); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 114, 215); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 100, 165); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 96, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("cordic.v", 173, 295); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 125, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 217, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 168, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 125, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 127, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "cordic.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 259, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 263, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 265, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 126, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 210, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cordic.v", 217, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 259, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("cordic.v", 284, 326); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("cordic.v", 365, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'cordic_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Workspace/Vivado/EE4301_Labs/lab8 cordic-finalversion-2/cordic-finalversion.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cordic_tb_behav -key {Behavioral:sim_1:Functional:cordic_tb} -tclbatch {cordic_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 64 MB. Current time: 12/15/17 12:18:10 AM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source cordic_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cordic_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 946.137 ; gain = 0.000 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 66 MB. Current time: 12/15/17 12:18:12 AM CST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 12 us 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 66 MB. Current time: 12/15/17 12:18:16 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 252, 20, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 253, 42, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 65 MB. Current time: 12/15/17 12:18:23 AM CST
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 257, -12, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 66 MB. Current time: 12/15/17 12:18:29 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 479, 485); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 368, 129); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 336, 132, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 66 MB. Current time: 12/15/17 12:18:34 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 341, 156, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 185, 184, false, false, false, true, false); // n:a (JViewport:JComponent, cg:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 66 MB. Current time: 12/15/17 12:18:40 AM CST
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Hexadecimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 524, 342); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 378, 120); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 67 MB. Current time: 12/15/17 12:18:44 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 523, 62); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 6, -29); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS

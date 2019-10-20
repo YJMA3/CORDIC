@@ -1,0 +1,15 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8834141c5b884113b2966f0817902a32 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cordic_tb2_behav xil_defaultlib.cordic_tb2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 17 differs from formal bit length 16 for port Xout [C:/Workspace/Vivado/EE4301_Labs/lab8/lab8.srcs/sim_1/new/cordic_tb2.v:46]
+WARNING: [VRFC 10-597] element index 15 into atan_table is out of bounds [C:/Workspace/Vivado/EE4301_Labs/lab8/lab8.srcs/sources_1/new/CORDIC.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CORDIC_default
+Compiling module xil_defaultlib.cordic_tb2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cordic_tb2_behav

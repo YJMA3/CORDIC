@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chen5202/cordic/cordic.sim/sim_1/impl/func/top_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-311] analyzing module cordic
+INFO: [VRFC 10-311] analyzing module cordic_controller
+INFO: [VRFC 10-311] analyzing module lab8_top
+INFO: [VRFC 10-311] analyzing module serial_adder
+INFO: [VRFC 10-311] analyzing module serial_adder_0
+INFO: [VRFC 10-311] analyzing module serial_adder_1
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chen5202/cordic/cordic.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

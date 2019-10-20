@@ -1,0 +1,41 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 34c8725ce6f446f096f69ae61ec336eb --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot toptb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.toptb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "toptb_time_impl.sdf", for root module "toptb/TOP".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "toptb_time_impl.sdf", for root module "toptb/TOP".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.sffsrce_fdre
+Compiling module simprims_ver.FDRE
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF8
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.serial_addsub
+Compiling module xil_defaultlib.serial_addsub_0
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.serial_addsub_1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.cordic
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.hexto7seg
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module simprims_ver.sffsrce_fdse
+Compiling module simprims_ver.FDSE
+Compiling module xil_defaultlib.lab8_top
+Compiling module xil_defaultlib.toptb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot toptb_time_impl

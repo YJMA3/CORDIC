@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/labs/cordic-finalversion/cordic-finalversion.sim/sim_1/impl/timing/toptb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic
+INFO: [VRFC 10-311] analyzing module hexto7seg
+INFO: [VRFC 10-311] analyzing module lab8_top
+INFO: [VRFC 10-311] analyzing module serial_addsub
+INFO: [VRFC 10-311] analyzing module serial_addsub_0
+INFO: [VRFC 10-311] analyzing module serial_addsub_1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/labs/cordic-finalversion/cordic-finalversion.srcs/sim_1/new/toptb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module toptb
